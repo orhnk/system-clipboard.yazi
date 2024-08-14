@@ -1,5 +1,4 @@
--- Meant to run at sync context. (yazi --sync system-clipboard)
--- REF: https://github.com/yazi-rs/plugins/blob/main/chmod.yazi/init.lua
+-- Meant to run at sync context. (yazi --sync simple-clipboard)
 
 return {
 	entry = function()
