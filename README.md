@@ -1,5 +1,8 @@
 # simple-clipboard.yazi
 
+> [!NOTE]
+> You need yazi 3.x for this plugin to work.
+
 > [!Important]
 > Made for Xorg. PR for Wayland. Also dynamic clipboard detection would be appriciated.
 
