@@ -8,10 +8,8 @@
 Copy or install this plugin and add the following keymap to your `manager.prepend_keymap`:
 
 ```toml
-{
-  on = "y";
-  run = ["plugin --sync simple-clipboard", "yank"];
-}
+on = "y"
+run = ["plugin --sync simple-clipboard", "yank"]
 ```
 
 This extension doesn't support multiple 
