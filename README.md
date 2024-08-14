@@ -2,6 +2,10 @@
 
 ## Demo
 
+https://github.com/user-attachments/assets/74d59f49-266a-497e-b67e-d77e64209026
+
+## Config
+
 > [!NOTE]
 > You need yazi 3.x for this plugin to work.
 
