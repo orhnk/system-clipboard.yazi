@@ -19,7 +19,18 @@ Copy or install this plugin and add the following keymap to your `manager.prepen
 
 ```toml
 on = "<C-y>"
-run = ["plugin system-clipboard"]
+# Equivalent to `plugin system-clipboard file-list`
+run = "plugin system-clipboard"
+```
+
+```toml
+on = "<C-c>"
+run = "plugin system-clipboard content"
+```
+
+```toml
+on = "<C-l>"
+run = "plugin system-clipboard uri-list"
 ```
 
 > [!Tip]
