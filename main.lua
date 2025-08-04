@@ -29,9 +29,12 @@ local function file_list_to_clipboard(urls, as_uri)
 		end
 	end
 
+	local status, err
 	if as_uri then
 		-- Run either `cb` or `wl-copy` to copy the file list to the clipboard
-		local xdg_session_type = os.getenv("XDG_SESSION_TYPE")
+		local xdg_session_type = os.getenv("XDG_SESSION_TYPE") or 
+			(os.getenv("WAYLAND_DISPLAY") and "wayland") or 
+			(os.getenv("DISPLAY") and "x11")
 		if xdg_session_type == "wayland" then
 			-- We don't use `cb` here because of a critical bug as of v0.10.0, https://github.com/Slackadays/Clipboard/releases/tag/0.10.0.
 			-- Cf. also https://github.com/Slackadays/Clipboard/issues/171.
